@@ -1,10 +1,11 @@
-# Amazon-Sales
+# Amazon Sales Dashboard
 
 ## User Testing
 
 We decided to go with Figma prototype instead. Please click in the link below on desktop (https://www.figma.com/proto/CGnB2DDEZx49DcDoF1a8RH/Final-Project?node-id=2049-296&starting-point-node-id=2049%3A296)
 
-## Streamlit Dashboard: https://amazonsale1-2uku3ty6pxgg4ikfndbb58.streamlit.app
+## Streamlit Dashboard
+https://amazonsale1-2uku3ty6pxgg4ikfndbb58.streamlit.app
 
 The ultimate goal is to create a dashboard that enables stakeholders to monitor key performance indicators (KPIs), identify growth opportunities, and detect operational bottlenecks.
 
@@ -12,7 +13,7 @@ The ultimate goal is to create a dashboard that enables stakeholders to monitor 
 
 The stakeholders are the Global Sales & Operations Manager, Regional Marketing Leads, and Finance Manager. These users are responsible for monitoring performance across the different countries, allocating marketing budgets, setting discount thresholds, and recognizing underperforming categories in specific regions.  
 
-## Data set
+## Data Set
 
 Based on the Amazon.csv, containing 10,000 records of transactions, key features include:
 - Geographic: City, State, and Country
