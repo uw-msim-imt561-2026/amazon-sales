@@ -2,7 +2,7 @@
 
 ## User Testing
 
-We decided to go with Figma prototype instead. Please click in the link below on desktop (https://www.figma.com/proto/CGnB2DDEZx49DcDoF1a8RH/Final-Project?node-id=2049-296&starting-point-node-id=2049%3A296)
+We decided to go with Figma prototype instead. Please click the link below on desktop (https://www.figma.com/proto/CGnB2DDEZx49DcDoF1a8RH/Final-Project?node-id=2049-296&starting-point-node-id=2049%3A296)
 
 ## Streamlit Dashboard
 https://amazonsale1-2uku3ty6pxgg4ikfndbb58.streamlit.app
