@@ -1,28 +1,22 @@
-# Amazon Sales Dashboard
+# IMT 561 Streamlit Lab Starter
 
-## Streamlit Dashboard
-https://amazonsale1-2uku3ty6pxgg4ikfndbb58.streamlit.app
+This repository is intentionally incomplete. It is designed for a guided live build during lab and then extended during the in-class activity and follow-up assignment.
 
-The ultimate goal is to create a dashboard that enables stakeholders to monitor key performance indicators (KPIs), identify growth opportunities, and detect operational bottlenecks.
+## Quickstart
+```bash
+python -m venv .venv
+source .venv/bin/activate  # (Windows: .venv\Scripts\activate)
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-## Audience
+## What you will do in the lab
+- Build a layout (tabs or 2 columns)
+- Add filters that modify a shared dataframe
+- Wire up at least 1 Plotly chart
+- Add metrics and additional views as an extension
 
-The stakeholders are the Global Sales & Operations Manager, Regional Marketing Leads, and Finance Manager. These users are responsible for monitoring performance across the different countries, allocating marketing budgets, setting discount thresholds, and recognizing underperforming categories in specific regions.  
-
-## Data Set
-
-Based on the Amazon.csv, containing 10,000 records of transactions, key features include:
-- Geographic: City, State, and Country
-- Product: Category, Product Name, and Brand
-- Financial: Unit Price, Quantity, Discount, Total Amount
-- Logistics: Order Status, Order Date, Payment Method
-
-## Context
-
-Some of the key questions that stakeholders seek to answer are:
-- Which country is the primary revenue driver?
-- Within a specific country such as the USA or Canada, which categories are most profitable?
-- Do certain months show cross-category growth, or is growth category-specific?
-- Is there a clear relationship between tax rate and sales volume?
-- Is the discount rate increasing, decreasing, or stable over the years? Do higher discount rates correspond with increased usage of certain payment methods?
-
+## Submission (for students)
+- Streamlit deployed link
+- GitHub repo link
+- Short README describing audience + tasks
