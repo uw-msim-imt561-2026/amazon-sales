@@ -13,10 +13,9 @@ The stakeholders are the Global Sales & Operations Manager, Regional Marketing L
 
 The Amazon.csv data is retrieved from Kaggle (https://www.kaggle.com/datasets/rohiteng/amazon-sales-dataset)
 
-The data set is synthetic, meaning it is not real but still intended to closely resemble real-world online retail behavior. Thus, the dataset is already very clean and well-structured. However, there are inconsistencies—particularly mismatches between the city/state and country fields. For example, entries such as “Austin, TX” are paired with a country like “Australia.” Because the city and state clearly correspond to U.S. locations, we removed the country column and focused the analysis solely on the U.S., where Amazon usage is strongest.
+The dataset is synthetic, meaning it is not real but designed to closely resemble real-world online retail behavior. As a result, it is already clean and well-structured. However, there are inconsistencies - particularly mismatches between the city/state and country fields. For example, entries such as “Austin, TX” are paired with a country like “Australia.” Because the city and state clearly correspond to U.S. locations, we removed the country column and focused the analysis solely on the U.S., where Amazon usage is strongest.
 
-
-It contains 10,000 records of transactions, key features include:
+The dataset contains 10,000 records of transactions, key features include:
 - Geographic: City, State, and Country
 - Product: Category, Product Name, and Brand
 - Financial: Unit Price, Quantity, Discount, Total Amount
