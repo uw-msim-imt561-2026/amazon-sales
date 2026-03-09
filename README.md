@@ -24,16 +24,10 @@ We selected this dataset because Amazon is a major powerhouse in U.S. e-commerce
 Since this is not real Amazon data, it may not fully reflect real-world conditions. Synthetic data is generated rather than observed so it can contain hidden biases or unrealistic patterns. Therefore, our group clearly disclose that the dataset is synthetic and avoid presenting the findings as real business insights. Without this transparency, the analysis could mislead readers or decision-makers, especially since the dataset is not representative of all Amazon users or markets. 
 
 ## Audience
-This dashboard will best serve the Amazon teams to better monitor key performance indicators (KPIs), identify growth opportunities, and detect operational bottlenecks
-### Sales & Operations Team (primary stakeholder)
-- They are responsible for managing product sales performance, inventory flow, and order fulfillment.
-- The dataset provides insights into sales volume, product performance, and regional demand, helping them identify top-selling products and operational trends.
+### Amazon Vendors/Sellers/Merchants (primary stakeholder)
+- They are responsible for managing product sales performance, inventory flow, and order fulfillment on Amazon.
+- The dataset provides insights into sales volume, product performance, and regional demand, helping them identify top-selling products and operational trends on Amazon.
 - Their goal is to optimize sales performance, improve inventory planning, and ensure efficient order fulfillment based on demand patterns.
-
-### Marketing Team (secondary stakeholder)
-- They are responsible for promoting products, driving customer engagement, and increasing sales through targeted campaigns. They analyze customer purchasing patterns and product popularity to guide marketing strategies.
-- The dataset helps them understand customer purchasing behavior, identify high-performing products, and evaluate which regions or categories may benefit from targeted marketing.
-- Their goal is to design more effective marketing campaigns, improve customer targeting, and increase overall sales through data-informed strategies.
 
 ## Context
 
