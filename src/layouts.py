@@ -13,7 +13,8 @@ from src.filters import (
     state_filter,
     year_filter,
     chart_type_toggle,
-    state_year_filter
+    state_year_filter,
+    year_filter_no_all
 )
 
 def render_homepage():
@@ -171,7 +172,7 @@ def render_dashboard(df):
     elif page == "Payment Method":
         st.subheader("Payment Method Analysis")
         st.markdown("This page shows how payment choices and discount levels relate to total order amount, helping users interpret customer purchasing behavior.")
-        selected_year = year_filter(df)
+        selected_year = year_filter_no_all(df)
         sales_by_payment(df, selected_year)
 
     elif page == "Correlation Analysis":
