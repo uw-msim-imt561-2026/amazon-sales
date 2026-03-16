@@ -190,9 +190,12 @@ def state_choropleth_map(df, metric, selected_year="All"):
     if metric == "TotalSales":
         grouped["MapValue"] = np.log1p(grouped["TotalSales"])
         colorbar_title = "Log Sales"
+        tick_format = None
+        
     else:
         grouped["MapValue"] = grouped[metric]
         colorbar_title = metric_title[metric]
+        tick_format = ".2%"
 
     fig = px.choropleth(
         grouped,
@@ -215,6 +218,9 @@ def state_choropleth_map(df, metric, selected_year="All"):
         margin=dict(l=0, r=0, t=50, b=0),
         coloraxis_colorbar_title=colorbar_title
     )
+
+    if tick_format:
+        fig.update_coloraxes(colorbar_tickformat=tick_format)
 
     st.plotly_chart(fig, use_container_width=True)
 
