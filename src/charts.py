@@ -184,6 +184,11 @@ def correlation_analysis(df):
         title="Correlation Matrix Heatmap"
     )
 
+    fig.update_layout(
+        height=700,
+        width=900
+    )
+
     st.plotly_chart(fig, use_container_width=True)
 
 def state_choropleth_map(df, metric, selected_year="All"):
