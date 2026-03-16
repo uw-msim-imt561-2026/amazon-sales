@@ -131,29 +131,6 @@ def tax_impact(df, year):
 
 def sales_by_payment(df, selected_year):
 
-    if selected_year == "All":
-
-        grouped = (
-            df.groupby("PaymentMethod")["TotalAmount"]
-            .sum()
-            .reset_index()
-        )
-
-        fig = px.bar(
-            grouped,
-            x="PaymentMethod",
-            y="TotalAmount",
-            title="Total Sales by Payment Method (All Years)"
-        )
-
-        fig.update_layout(
-            xaxis_title="Payment Method",
-            yaxis_title="Total Sales"
-        )
-
-
-    else:
-
         df = df[df["Year"] == selected_year]
 
         fig = px.box(
@@ -169,7 +146,7 @@ def sales_by_payment(df, selected_year):
             yaxis_title="Total Amount"
         )
 
-    st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True)
 
 def correlation_analysis(df):
 
