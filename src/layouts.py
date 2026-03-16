@@ -222,22 +222,9 @@ def render_dashboard(df):
             .sort_values("TotalSales", ascending=False)
             .reset_index(drop=True)
         )
-        st.dataframe(
-            summary_df,
-            use_container_width=True,
-            hide_index=True,
-            column_config={
-                "TotalSales": st.column_config.NumberColumn(
-                "Total Sales",
-                format="$%,.2f"
-                ),
-                "TaxRate": st.column_config.NumberColumn(
-                "Average Tax Rate",
-                format="%.2f%%"
-                ),
-                "Discount": st.column_config.NumberColumn(
-                "Average Discount",
-                format="%.2f%%"
-                )
-            }
-        )
+        
+        summary_df["TotalSales"] = summary_df["TotalSales"].map(lambda x: f"${x:,.2f}")
+        summary_df["AvgTaxRate"] = summary_df["AvgTaxRate"].map(lambda x: f"{x:.2%}")
+        summary_df["AvgDiscount"] = summary_df["AvgDiscount"].map(lambda x: f"{x:.2%}")
+
+        st.dataframe(summary_df, use_container_width=True, hide_index=True)
