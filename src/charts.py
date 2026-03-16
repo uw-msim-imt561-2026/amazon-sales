@@ -7,8 +7,10 @@ def sales_overview(df, categories, selected_year, chart_type):
     if selected_year != "All":
         df = df[df["Year"] == selected_year]
 
-    if selected_year == "All":
+    if categories:
+        df = df[df["Category"].isin(categories)]
 
+    if selected_year == "All":
         grouped = (
             df.groupby(["Year", "Month"])["TotalAmount"]
             .sum()
@@ -22,7 +24,7 @@ def sales_overview(df, categories, selected_year, chart_type):
                 y="TotalAmount",
                 color="Year",
                 barmode="group",
-                title="Monthly Sales (All Years)"
+                title="Monthly Sales by Year"
             )
         else:
             fig = px.line(
@@ -31,7 +33,7 @@ def sales_overview(df, categories, selected_year, chart_type):
                 y="TotalAmount",
                 color="Year",
                 markers=True,
-                title="Monthly Sales Trend (All Years)"
+                title="Monthly Sales Trend by Year"
             )
 
         fig.update_layout(
@@ -40,9 +42,6 @@ def sales_overview(df, categories, selected_year, chart_type):
         )
 
     else:
-
-        df = df[df["Category"].isin(categories)]
-
         grouped = (
             df.groupby(["Month", "Category"])["TotalAmount"]
             .sum()
