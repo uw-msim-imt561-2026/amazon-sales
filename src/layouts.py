@@ -199,7 +199,7 @@ def render_dashboard(df):
         filtered_df = df if selected_year == "All" else df[df["Year"] == selected_year]
 
         col1.metric("Total Sales", f"{filtered_df['TotalAmount'].sum():,.2f}")
-        col2.metric("Average Tax Rate", f"{filtered_df['TaxRate'].mean():.2f}")
+        col2.metric("Average Tax Rate", f"{filtered_df['TaxRate'].mean():.2%}")
         col3.metric("Average Discount", f"{filtered_df['Discount'].mean():.2f}")
 
         left_col, right_col = st.columns([1.4, 1])
