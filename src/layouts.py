@@ -19,7 +19,7 @@ from src.filters import (
 def render_homepage():
     st.markdown(
         """
-        <div style="background-color:#f8f9fa; padding: 2rem; border-radius: 16px; margin-bottom: 1rem;">
+        <div style= padding: 2rem; border-radius: 16px; margin-bottom: 1rem;">
             <p style="font-size: 1.05rem; color: #4f4f4f; line-height: 1.6;">
                 This dashboard is designed to support data-driven decision making by presenting
                 interactive views of Amazon sales performance across geography, product categories,
@@ -37,7 +37,7 @@ def render_homepage():
     with col1:
         st.markdown(
             """
-            <div style="background-color:white; padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6; min-height:190px;">
+            <div style= padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6; min-height:190px;">
                 <h4>Primary Audience</h4>
                 <p>
                 The primary audience for this dashboard is the <b>Amazon Sales Team</b>.
@@ -52,7 +52,7 @@ def render_homepage():
     with col2:
         st.markdown(
             """
-            <div style="background-color:white; padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6; min-height:190px;">
+            <div style= padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6; min-height:190px;">
                 <h4>Other Stakeholders</h4>
                 <p>
                 Other stakeholders may include <b>marketing teams, business analysts, and product managers</b>.
@@ -67,7 +67,7 @@ def render_homepage():
     st.markdown("### Questions Answered by the Dashboard")
     st.markdown(
         """
-        <div style="background-color:white; padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6;">
+        <div style= padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6;">
             <ul style="line-height:1.8;">
                 <li>Which geographic regions generate the highest and lowest sales?</li>
                 <li>How do product category sales change over time?</li>
@@ -87,7 +87,7 @@ def render_homepage():
     with c1:
         st.markdown(
             """
-            <div style="background-color:white; padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6; margin-bottom:1rem;">
+            <div style=" padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6; margin-bottom:1rem;">
                 <h4>Geographic Sales Analysis</h4>
                 <p>
                 Shows sales performance across states and helps identify regional patterns,
@@ -95,7 +95,7 @@ def render_homepage():
                 </p>
             </div>
 
-            <div style="background-color:white; padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6;">
+            <div style= padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6;">
                 <h4>Category Sales Overview</h4>
                 <p>
                 Compares category performance over time and reveals growth patterns,
@@ -109,7 +109,7 @@ def render_homepage():
     with c2:
         st.markdown(
             """
-            <div style="background-color:white; padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6; margin-bottom:1rem;">
+            <div style= padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6; margin-bottom:1rem;">
                 <h4>Payment Method and Discount Analysis</h4>
                 <p>
                 Examines how payment choices and discount levels relate to total order amount,
@@ -117,7 +117,7 @@ def render_homepage():
                 </p>
             </div>
 
-            <div style="background-color:white; padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6;">
+            <div style= padding:1.2rem; border-radius:14px; border:1px solid #e6e6e6;">
                 <h4>Correlation Analysis</h4>
                 <p>
                 Summarizes numerical relationships within the dataset and helps identify
