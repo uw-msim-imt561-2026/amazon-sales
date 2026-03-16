@@ -230,11 +230,11 @@ def render_dashboard(df):
                 "Total Sales",
                 format="$%,.2f"
                 ),
-                "AvgTaxRate": st.column_config.NumberColumn(
+                "TaxRate": st.column_config.NumberColumn(
                 "Average Tax Rate",
                 format="%.2f%%"
                 ),
-                "AvgDiscount": st.column_config.NumberColumn(
+                "Discount": st.column_config.NumberColumn(
                 "Average Discount",
                 format="%.2f%%"
                 )
