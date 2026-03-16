@@ -39,3 +39,7 @@ def state_year_filter(df):
         "Select Year for Revenue by State",
         sorted(df["Year"].unique())
     )
+    
+def year_filter_no_all(df):
+    years = sorted(df["Year"].dropna().unique().tolist())
+    return st.sidebar.selectbox("Select Year", years, key="payment_year_filter")
