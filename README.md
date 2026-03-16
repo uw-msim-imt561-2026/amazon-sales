@@ -1,7 +1,7 @@
 # Amazon Sales Dashboard
 
 ## Streamlit Dashboard
-https://fxhcinqmectiyrzdbyy9oq.streamlit.app
+https://amazon-sales-xt9xnmjw24ta7xpnjeugas.streamlit.app
 
 The ultimate goal is to create a dashboard that enables stakeholders to monitor key performance indicators (KPIs), identify growth opportunities, and detect operational bottlenecks.
 
